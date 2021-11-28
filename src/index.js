@@ -5,4 +5,4 @@ import './styles/style.scss'
 import Portfolio from './components/Portfolio'
 
 
-ReactDOM.render(<Portfolio/>, document.querySelector('body'))
+ReactDOM.render(<Portfolio/>, document.querySelector('main'))

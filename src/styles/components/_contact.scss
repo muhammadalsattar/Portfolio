@@ -1,0 +1,18 @@
+.contact-inline {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+.contact-inline .form-floating {
+    flex-grow: 2 !important;
+    margin-right: .4em !important;
+}
+
+.contact-inline button {
+    flex-grow: 1;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: transparent !important;
+    color: white !important;
+}
