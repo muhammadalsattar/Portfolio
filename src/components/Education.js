@@ -1,124 +1,67 @@
 import React from 'react'
-import {FaCertificate} from 'react-icons/fa'
-
+import EducationCard from './EducationCard';
 const Education = () => (
     <div className="section education">
-          <h2 className="mb-5">Education & Certificates</h2>
-          <div className="row">
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Fundamentals</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Beyond the Fundamentals</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Object-Oriented Design</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Data Structures</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Algorithms</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Design Patterns</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Databases</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: APIs and Web Services</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Programming Foundations: Software Testing/QA</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Git Essential Training: The Basics</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">HTML Essential Training</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">CSS Essential Training</h4>
-                  <small className="card-text">LinkedIn. Septemper 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">The Modern JavaScript Bootcamp</h4>
-                  <small className="card-text">Udemy. October 2021</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Front End Web Development Professional Nanodegree Program</h4>
-                  <small className="card-text">Udacity. July 2021</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <h2 className="mb-5">Education & Certificates</h2>
+      <div className="row">
+        <EducationCard
+        name={"Programming Foundations: Fundamentals"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Beyond the Fundamentals"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Object-Oriented Design"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Data Structures"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Algorithms"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Design Patterns"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Databases"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: APIs and Web Services"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Programming Foundations: Software Testing/QA"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"Git Essential Training: The Basics"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"HTML Essential Training"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"CSS Essential Training"}
+        college={"LinkedIn. Septemper 2021"}
+        />
+        <EducationCard
+        name={"The Modern JavaScript Bootcamp"}
+        college={"Udemy. October 2021"}
+        />
+        <EducationCard
+        name={"Front End Web Development Professional Nanodegree Program"}
+        college={"Udacity. July 2021"}
+        />
+      </div>
+    </div>
 )
 
 export default Education;
