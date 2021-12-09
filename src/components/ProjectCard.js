@@ -6,11 +6,11 @@ export default function ProjectCard(props) {
         <div className="col-sm-6 mb-3">
               <div className="card">
                 <div className="card-body">
-                  <h4 className="card-title">{props.name}<a href="#" className="btn btn-link align-baseline"><BiLinkExternal/></a></h4>
-                  <p className="card-text">{props.details}</p>
+                  <h3 className="card-title"><mark>{props.name}</mark></h3>
+                  <p className="card-text"><mark>{props.details}</mark></p>
                 </div>
                 <div className="card-footer">
-                  <small className="text-muted">{props.tools}</small>
+                  <small><mark>{props.tools}</mark></small>
                 </div>
               </div>
         </div>

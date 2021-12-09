@@ -1,14 +1,17 @@
-import React from 'react'
-import {FiGithub} from 'react-icons/fi';
-import {SiGithub} from 'react-icons/si'
+import React from 'react';
+import {SiGithub} from 'react-icons/si';
+import {BsLinkedin, BsGithub, BsFacebook, BsYoutube} from 'react-icons/bs'
 
 const Footer = () => (
     <div className="footer">
-          <button type="button" className="btn btn-link">Link</button>
-          <h3>Muhammad Abd-Elsattar</h3>
-          <div className="social-links"><FiGithub/></div>
-          <h1><SiGithub/></h1>
-        </div>
+      <h4>Muhammad Abd-Elsattar</h4>
+      <div className="social-links">
+        <h4><BsLinkedin/></h4>
+        <h4><BsGithub/></h4>
+        <h4><BsFacebook/></h4>
+        <h4><BsYoutube/></h4>
+      </div>
+    </div>
 )
 
 export default Footer;

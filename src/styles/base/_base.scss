@@ -1,45 +1,8 @@
-// base styles
 body {
-    background-color: #7379E3 !important;
-    font-family: 'Arimo', sans-serif !important;
-    width: 80% !important;
-    margin: 0 auto;
-    
-}
-.section h2 {
-    font-size: 3em;
-    color: #363DBB;
-    margin: 1em 0;
-}
-
-/* header styling */
-.header{
-    float: right;
-    width: 5%;
-    display: flex;
-    flex-direction: column;
-}
-.header > span {
-    background-color: white !important;
-}
-/* intro styling */
-.intro{
-    color: #9CA0EF !important;
-    margin: 7em 0em !important;
-}
-.intro h4 {
-    font-size: 1.9em;
-    font-weight: lighter;
-}
-.intro h1 {
-    font-weight: 700;
-    color: #CCCFFA !important; 
-    font-size: 5em;
-}
-.intro h3 {
-    font-size: 2.3em;
-}
-
-.btn-link {
-    font-size: .8em !important;
+    width: 100%;
+    color: $primcolor !important;
+    background-color: $seccolor !important;
+    font-family: $primfont !important;
+    position: absolute;
+    overflow-x: hidden !important;
 }

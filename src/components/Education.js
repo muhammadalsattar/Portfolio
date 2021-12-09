@@ -1,7 +1,17 @@
 import React from 'react'
 import EducationCard from './EducationCard';
-const Education = () => (
-    <div className="section education">
+
+class Education extends React.Component {
+  componentDidMount(){
+    window.addEventListener('scroll', ()=> {
+      if (document.querySelector('.education h2').getBoundingClientRect().y < window.scrollY){
+        document.querySelector('.education .row').style.animationPlayState = 'running'
+      }
+    })
+  }
+  render(){
+    return(
+      <div className="section education">
       <h2 className="mb-5">Education & Certificates</h2>
       <div className="row">
         <EducationCard
@@ -62,6 +72,8 @@ const Education = () => (
         />
       </div>
     </div>
-)
+    )
+  }
+}
 
 export default Education;

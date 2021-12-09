@@ -1,83 +1,61 @@
 import React from 'react'
+import SkillsCard from './SkillsCard';
 
-const Skills = () => (
-    <div className="section skills">
-          <h2>Skills</h2>
-          <div className="row">
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">HTML5</h4>
-                  <small className="card-text">Excellent</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">CSS3</h4>
-                  <small className="card-text">Excellent</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">SASS</h4>
-                  <small className="card-text">Excellent</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">ES6</h4>
-                  <small className="card-text">Very Good</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Python</h4>
-                  <small className="card-text">Very Good</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">React</h4>
-                  <small className="card-text">Good</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Flask</h4>
-                  <small className="card-text">Good</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">SQL</h4>
-                  <small className="card-text">Very Good</small>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h4 className="card-title">Git</h4>
-                  <small className="card-text">Good</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-)
+class Skills extends React.Component {
+  componentDidMount(){
+    window.addEventListener('scroll', ()=> {
+      console.log(document.querySelector('.skills .row').getBoundingClientRect().y + window.innerHeight)
+      console.log(window.scrollY)
+      if (document.querySelector('.skills .row').getBoundingClientRect().y + window.innerHeight < window.scrollY){
+        document.querySelector('.skills .row').style.animationPlayState = 'running'
+      }
+    })
+  }
+  render(){
+    return (
+      <div className="skills">
+      <h2>Skills</h2>
+      <div className="row">
+        <SkillsCard
+        title='HTML5'
+        level='Excellent'
+        />
+        <SkillsCard
+        title='CSS3'
+        level='Excellent'
+        />
+        <SkillsCard
+        title='SASS'
+        level='Excellent'
+        />
+        <SkillsCard
+        title='ES6'
+        level='Very Good'
+        />
+        <SkillsCard
+        title='Python'
+        level='Very Good'
+        />
+        <SkillsCard
+        title='React'
+        level='Good'
+        />
+        <SkillsCard
+        title='Flask'
+        level='Good'
+        />
+        <SkillsCard
+        title='SQL'
+        level='Very Good'
+        />
+        <SkillsCard
+        title='Git'
+        level='Good'
+        />
+      </div>
+    </div>
+    )
+  }
+}
 
 export default Skills;
