@@ -4,7 +4,7 @@ import EducationCard from './EducationCard';
 class Education extends React.Component {
   componentDidMount(){
     window.addEventListener('scroll', ()=> {
-      if (document.querySelector('.education h2').getBoundingClientRect().y < window.scrollY){
+      if (document.querySelector('.education h2').getBoundingClientRect().y < window.innerHeight / 2){
         document.querySelector('.education .row').style.animationPlayState = 'running'
       }
     })

@@ -30,3 +30,17 @@
     color: $seccolor;
     background-color: $thdcolor;
 }
+
+.projects .row {
+    position: relative;
+    transition: ease-in;
+    animation-name: transition;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+}
+
+@keyframes transition {
+    from {right: 100vw}
+    to {right: 0;}
+}

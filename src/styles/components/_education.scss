@@ -28,9 +28,9 @@
 
 .education .row {
     position: relative;
-    transition: ease-in-out;
+    transition: ease-in;
     animation-name: transition;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-play-state: paused;
     animation-iteration-count: 1;
 }

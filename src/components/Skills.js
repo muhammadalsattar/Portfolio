@@ -4,9 +4,7 @@ import SkillsCard from './SkillsCard';
 class Skills extends React.Component {
   componentDidMount(){
     window.addEventListener('scroll', ()=> {
-      console.log(document.querySelector('.skills .row').getBoundingClientRect().y + window.innerHeight)
-      console.log(window.scrollY)
-      if (document.querySelector('.skills .row').getBoundingClientRect().y + window.innerHeight < window.scrollY){
+      if (document.querySelector('.skills .row').getBoundingClientRect().y < window.innerHeight / 2){
         document.querySelector('.skills .row').style.animationPlayState = 'running'
       }
     })

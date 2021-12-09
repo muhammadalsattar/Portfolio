@@ -1,9 +1,17 @@
 import React from 'react'
 import ProjectCard from './ProjectCard';
-import {BsGithub} from 'react-icons/bs'
 
-const Projects = () => (
-    <div className="section projects">
+class Projects extends React.Component {
+  componentDidMount(){
+    window.addEventListener('scroll', ()=> {
+      if (document.querySelector('.projects .row').getBoundingClientRect().y < window.innerHeight / 2){
+        document.querySelector('.projects .row').style.animationPlayState = 'running'
+      }
+    })
+  }
+  render(){
+    return(
+      <div className="section projects">
       <h2>Projects</h2>
       <div className="row">
         <ProjectCard
@@ -57,7 +65,9 @@ const Projects = () => (
           tools={"HTML. CSS. Python. Django. SQLite"}
         />
       </div>
-    </div> 
-)
+    </div>
+    )
+  }
+}
 
 export default Projects;
