@@ -34,8 +34,4 @@ class Portfolio extends React.Component{
     }
 }
 
-const Portfolio = () => (
-    
-)
-
 export default Portfolio
