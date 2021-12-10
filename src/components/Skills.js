@@ -2,13 +2,6 @@ import React from 'react'
 import SkillsCard from './SkillsCard';
 
 class Skills extends React.Component {
-  componentDidMount(){
-    window.addEventListener('scroll', ()=> {
-      if (document.querySelector('.skills .row').getBoundingClientRect().y < window.innerHeight / 2){
-        document.querySelector('.skills .row').style.animationPlayState = 'running'
-      }
-    })
-  }
   render(){
     return (
       <div className="skills">

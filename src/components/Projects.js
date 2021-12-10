@@ -2,13 +2,6 @@ import React from 'react'
 import ProjectCard from './ProjectCard';
 
 class Projects extends React.Component {
-  componentDidMount(){
-    window.addEventListener('scroll', ()=> {
-      if (document.querySelector('.projects .row').getBoundingClientRect().y < window.innerHeight / 2){
-        document.querySelector('.projects .row').style.animationPlayState = 'running'
-      }
-    })
-  }
   render(){
     return(
       <div className="section projects">
