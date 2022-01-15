@@ -26,16 +26,21 @@
     background-color: $thdcolor !important;
 }
 
-.education .row {
-    position: relative;
-    transition: ease-in;
-    animation-name: transition;
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-iteration-count: 1;
+.education .more {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: opacity .5s;
+    opacity: 0;
 }
 
-@keyframes transition {
-    from {left: 100vw}
-    to {left: 0;}
+.education #morebtn{
+    width: fit-content;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: $morebtncolor;
+    text-decoration: underline $primcolor;
 }

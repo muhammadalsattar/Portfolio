@@ -31,16 +31,21 @@
     background-color: $thdcolor;
 }
 
-.projects .row {
-    position: relative;
-    transition: ease-in;
-    animation-name: transition;
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-iteration-count: 1;
+.projects .more {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: opacity .5s;
+    opacity: 0;
 }
 
-@keyframes transition {
-    from {right: 100vw}
-    to {right: 0;}
+.projects #morebtn{
+    width: fit-content;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: $morebtncolor;
+    text-decoration: underline $primcolor;
 }

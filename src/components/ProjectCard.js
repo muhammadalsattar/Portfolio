@@ -6,7 +6,7 @@ export default function ProjectCard(props) {
         <div className="col-sm-6 mb-3">
               <div className="card">
                 <div className="card-body">
-                  <h3 className="card-title"><mark>{props.name}</mark></h3>
+                  <h3 className="card-title"><a href={props.href} target='_blank'><mark>{props.name}</mark></a></h3>
                   <p className="card-text"><mark>{props.details}</mark></p>
                 </div>
                 <div className="card-footer">
