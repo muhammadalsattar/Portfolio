@@ -26,22 +26,30 @@ class Education extends React.Component {
       <h2 className="mb-5">Education & Certificates</h2>
       <div className="row">
         <EducationCard
+        name={"The Complete React Developer Course (w/ Hooks and Redux)"}
+        college={"Udemy. January 2022"}
+        />
+        <EducationCard
         name={"CS50's Introduction to Computer Science"}
         college={"CS50. December 2021"}
         />
         <EducationCard
-        name={"Programming Foundations: Fundamentals"}
-        college={"LinkedIn. Septemper 2021"}
-        />
-        <EducationCard
-        name={"Programming Foundations: Beyond the Fundamentals"}
-        college={"LinkedIn. Septemper 2021"}
+          name={"The Modern JavaScript Bootcamp"}
+          college={"Udemy. October 2021"}
         />
         <EducationCard
         name={"Programming Foundations: Object-Oriented Design"}
         college={"LinkedIn. Septemper 2021"}
         />
         <div className='more'>
+          <EducationCard
+          name={"Programming Foundations: Fundamentals"}
+          college={"LinkedIn. Septemper 2021"}
+          />
+          <EducationCard
+            name={"Programming Foundations: Beyond the Fundamentals"}
+            college={"LinkedIn. Septemper 2021"}
+          />
           <EducationCard
           name={"Programming Foundations: Data Structures"}
           college={"LinkedIn. Septemper 2021"}
@@ -77,10 +85,6 @@ class Education extends React.Component {
           <EducationCard
           name={"CSS Essential Training"}
           college={"LinkedIn. Septemper 2021"}
-          />
-          <EducationCard
-          name={"The Modern JavaScript Bootcamp"}
-          college={"Udemy. October 2021"}
           />
           <EducationCard
           name={"Front End Web Development Professional Nanodegree Program"}
