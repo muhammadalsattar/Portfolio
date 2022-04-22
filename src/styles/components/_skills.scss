@@ -16,11 +16,30 @@
 }
 
 .skills .card-title mark {
-    color: $seccolor;
-    background-color: $primcolor;
+    color: $thdcolor;
+    background-color: transparent !important;
 }
 
 .skills .card-text mark {
-    color: $seccolor;
-    background-color: $thdcolor;
+    color: $primcolor;
+    background-color: transparent !important;
+}
+
+.skills .more {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+.skills #morebtn{
+    width: fit-content;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: $morebtncolor;
+    text-decoration: underline $primcolor;
 }

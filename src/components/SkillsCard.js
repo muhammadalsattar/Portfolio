@@ -6,7 +6,7 @@ export default function SkillsCard(props) {
               <div className="card">
                 <div className="card-body">
                   <h4 className="card-title"><mark>{props.title}</mark></h4>
-                  <small className="card-text"><mark>{props.level}</mark></small>
+                  <small className="card-text">{props.level}</small>
                 </div>
               </div>
             </div>

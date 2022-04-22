@@ -15,9 +15,16 @@
     border: none;
 }
 
-.projects .card-title mark, .projects .card-text mark {
-    color: $seccolor;
-    background-color: $primcolor;
+.projects .card-title mark {
+    color: $morebtncolor !important;
+    background-color: $seccolor !important;
+}
+
+.projects .card-text mark {
+    color: $morebtncolor !important;
+    background-color: $seccolor !important;
+    line-height: 1em !important;
+    border: 1px solid $morebtncolor !important;
 }
 
 .projects .card-footer {
@@ -27,8 +34,8 @@
 }
 
 .projects .card-footer mark {
-    color: $seccolor;
-    background-color: $thdcolor;
+    color: $morebtncolor !important;
+    background-color: $seccolor !important;
 }
 
 .projects .more {

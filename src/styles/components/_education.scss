@@ -19,6 +19,14 @@
 .education .card-title mark {
     color: $seccolor;
     background-color: $primcolor !important;
+    line-height: 1.6em;
+}
+
+.education .card-title span {
+    font-size: 1.1em;
+    color: $primcolor;
+    background-color: $seccolor !important;
+    padding: 1em .3em;
 }
 
 .education .card-text mark {
