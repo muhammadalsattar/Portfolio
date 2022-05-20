@@ -25,37 +25,49 @@ class Skills extends React.Component {
       <h2>Skills</h2>
       <div className="row">
         <SkillsCard
-        title='Node'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
+        title='AWS'
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
         />
         <SkillsCard
-        title='Express'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
+        title='TypeScript'
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
+        />
+        <SkillsCard
+        title='Node'
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='MongoDB/Mongoose'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='Jest/Enzyme/Jasmine'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='REST APIs'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
-        />
-        <SkillsCard
-        title='HTML5'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircleFill/></mark>}
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
         />
         <div className='more'>
         <SkillsCard
+        title='CI/CD'
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
+        />
+        <SkillsCard
+        title='Express'
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
+        />
+        <SkillsCard
+        title='HTML5'
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
+        />
+        <SkillsCard
         title='CSS3'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircleFill/></mark>}
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='SASS'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircleFill/></mark>}
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='ES6'
@@ -67,11 +79,11 @@ class Skills extends React.Component {
         />
         <SkillsCard
         title='React'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircleFill/> <BsCircle/></mark>}
+        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='Flask'
-        level={<mark><BsCircleFill/> <BsCircleFill/> <BsCircle/> <BsCircle/></mark>}
+        level={<mark><BsCircleFill/> <BsCircle/> <BsCircle/> <BsCircle/></mark>}
         />
         <SkillsCard
         title='MySQL/PostgreSQL'

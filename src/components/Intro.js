@@ -9,10 +9,11 @@ class Intro extends React.Component{
         return(
             <div className="intro">
                 <h1>Muhammad Abd-Elsattar</h1>
-                <h3>Javascript full-stack developer skilled in building/testing REST APIs. Solid experience building full-stack websites/web applications with the MERN stack. Familiarity with Python/Django/Flask.
+                <h3>
+                A Self Taught Full Stack Engineer with a great passion for building web solutions. I've recently developed a REST API and a Real-Time Chat application with Express and SocketIO. I hope to utilize my eagerness for problem-solving in creating robust web applications.
                 </h3>
                 <div className="alert alert-light" role="alert" onClick={this.hide}>
-                    <h5><MdDone/> Thank you for coming by and for your kind words! see you soon</h5> 
+                    <h5><MdDone/> Thank you for coming by! see you soon</h5> 
                 </div>
             </div>
         )

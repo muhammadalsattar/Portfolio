@@ -27,6 +27,16 @@ class Education extends React.Component {
       <h2 className="mb-5">Education & Certificates</h2>
       <div className="row">
         <EducationCard
+        icon={<SiUdacity/>}
+        name={"Advanced Full-Stack Web Development Nanodegree Program"}
+        college={"Udacity. May 2022"}
+        />
+        <EducationCard
+        icon={<SiUdemy/>}
+        name={"The Complete Node.js Developer Course (3rd Edition)"}
+        college={"Udemy. April 2022"}
+        />
+        <EducationCard
         icon={<SiUdemy/>}
         name={"The Complete React Developer Course (w/ Hooks and Redux)"}
         college={"Udemy. January 2022"}
@@ -36,17 +46,17 @@ class Education extends React.Component {
         name={"CS50's Introduction to Computer Science"}
         college={"CS50. December 2021"}
         />
-        <EducationCard
-          icon={<SiUdemy/>}
-          name={"The Modern JavaScript Bootcamp"}
-          college={"Udemy. October 2021"}
-        />
-        <EducationCard
-        icon={<SiLinkedin/>}
-        name={"Programming Foundations: Object-Oriented Design"}
-        college={"LinkedIn. Septemper 2021"}
-        />
         <div className='more'>
+          <EducationCard
+            icon={<SiUdemy/>}
+            name={"The Modern JavaScript Bootcamp"}
+            college={"Udemy. October 2021"}
+          />
+          <EducationCard
+          icon={<SiLinkedin/>}
+          name={"Programming Foundations: Object-Oriented Design"}
+          college={"LinkedIn. Septemper 2021"}
+          />
           <EducationCard
           icon={<SiLinkedin/>}
           name={"Programming Foundations: Fundamentals"}
