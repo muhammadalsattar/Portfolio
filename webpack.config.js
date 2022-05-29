@@ -1,5 +1,4 @@
 const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 
 module.exports = (env) => {
@@ -22,7 +21,8 @@ module.exports = (env) => {
                 }
             }, {
                 test: /\.s?css$/,
-                use: [MiniCssExtractPlugin.loader,
+                use: [
+                    'style-loader',
                     {
                         loader: 'css-loader',
                         options: {sourceMap: true}
@@ -33,15 +33,12 @@ module.exports = (env) => {
                     }] 
             }]
         },
-        plugins: [new MiniCssExtractPlugin({
-            filename: 'styles.css'
-        })],
         devServer: {
             static: {
                 directory: path.resolve(__dirname, 'public/'),
                 publicPath: '/'
             }
         },
-        devtool: env.production? 'source-map': 'inline-source-map'
+        devtool: env.production? '': 'eval-source-map'
     }
 }
