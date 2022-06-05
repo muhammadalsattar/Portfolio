@@ -10,8 +10,7 @@ class Intro extends React.Component{
             <div className="intro">
                 <h1>Muhammad Abd-Elsattar</h1>
                 <h3>
-                A Self Taught Full Stack Engineer with a great passion for building web solutions. I've recently developed a REST API and a Real-Time Chat application with Express and SocketIO. I hope to utilize my eagerness for problem-solving in creating robust web applications.
-                </h3>
+                    Hi, I am Muhammad Abd-Elsattar, a Self Taught Full Stack Engineer with a passion for building web solutions. I've recently developed a REST API and a Real-Time Chat application with Express and SocketIO. I am eager to develop my skills consistently and I am looking forward to creating more robust web applications.                </h3>
                 <div className="alert alert-light" role="alert" onClick={this.hide}>
                     <h5><MdDone/> Thank you for coming by! see you soon</h5> 
                 </div>
