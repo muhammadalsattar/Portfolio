@@ -1,8 +1,15 @@
 const path = require('path')
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
     return {
+        resolve: {
+            fallback: {
+                "fs": false,
+                "path": require.resolve("path-browserify"),
+                "os": require.resolve("os-browserify/browser"),
+            }
+        },
         entry: './src/index.js',
         output: {
             path: path.resolve(__dirname, 'public/static'),
@@ -21,24 +28,18 @@ module.exports = (env) => {
                 }
             }, {
                 test: /\.s?css$/,
-                use: [
-                    'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {sourceMap: true}
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {sourceMap: true}
-                    }] 
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             }]
         },
+        plugins: [
+            new MiniCssExtractPlugin()
+        ],
         devServer: {
             static: {
                 directory: path.resolve(__dirname, 'public/'),
                 publicPath: '/'
             }
         },
-        devtool: env.production? '': 'eval-source-map'
+        devtool: env.production? 'source-map': 'eval-source-map'
     }
 }

@@ -1,11 +1,24 @@
 import React from 'react'
-import emailjs from 'emailjs-com';
+const sgMail = require('@sendgrid/mail')
 class Contact extends React.Component {
   
   sendMail = (e) => {
     // Sending the email
     e.preventDefault();
-    emailjs.sendForm('service_ttc7wh9', 'template_nr72snt', e.target, 'user_vJ148TvsCvpdl2zU3QhPt')
+    sgMail.setApiKey('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');
+    const msg = {
+      to: 'muhammadalsattar@gmail.com',
+      from: `${e.target.useremail}`,
+      subject: `${e.target.username} From Portfolio!`,
+      text: `${e.target.message}`,
+    };
+    sgMail
+    .send(msg)
+    .then(() => {
+    })
+    .catch((error) => {
+      console.error(error)
+    })
 
     // Wiping form fields value
     e.target.username.value = ''
