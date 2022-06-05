@@ -20,11 +20,13 @@
     background-color: $seccolor !important;
 }
 
+.projects .card-text{
+    padding: 1em 0em !important;
+}
 .projects .card-text mark {
     color: $morebtncolor !important;
     background-color: $seccolor !important;
-    line-height: 1em !important;
-    border: 1px solid $morebtncolor !important;
+    font-size: 1em;
 }
 
 .projects .card-footer {

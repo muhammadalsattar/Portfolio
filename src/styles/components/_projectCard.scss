@@ -1,3 +1,10 @@
-h3 a {
-    text-decoration: underline $morebtncolor;
+.projectlinks{
+    padding: 1em 0 !important;
+}
+
+.projectlinks button{
+    background-color: $primcolor;
+    color: $seccolor;
+    border: none;
+    margin: 0em .4em;
 }

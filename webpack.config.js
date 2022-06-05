@@ -3,13 +3,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
     return {
-        resolve: {
-            fallback: {
-                "fs": false,
-                "path": require.resolve("path-browserify"),
-                "os": require.resolve("os-browserify/browser"),
-            }
-        },
         entry: './src/index.js',
         output: {
             path: path.resolve(__dirname, 'public/static'),
