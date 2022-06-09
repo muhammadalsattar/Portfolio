@@ -8,3 +8,14 @@
     border: none;
     margin: 0em .4em;
 }
+
+.projectlinks button:hover{
+    background-color: $thdcolor;
+}
+
+.projectlinks button:focus{
+    background-color: $primcolor;
+    color: $seccolor;
+    border: none;
+    outline: 0;
+}
